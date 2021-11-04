@@ -1,8 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
-@media print {
-  
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 
 * {
   margin: 0;
@@ -15,15 +11,13 @@ body {
   background-color: #0b7af3;
   font-size: 14px;
   line-height: 22px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 a {
   text-decoration: none;
   color: #333;
 }
-
-
 
 i {
   background: rgb(7, 115, 232);
@@ -38,10 +32,10 @@ i {
   height: auto;
   margin: 0 auto;
   background: #efefef;
-  box-shadow: 0px 0px 6px 2px rgba(84,84,84,0.62);
+  box-shadow: 0px 0px 6px 2px rgba(84, 84, 84, 0.62);
 }
 
-.resume{
+.resume {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -50,7 +44,6 @@ i {
 
 .header {
   display: flex;
-  padding-bottom: 20px;
 }
 
 .photo img {
@@ -101,11 +94,9 @@ i {
   color: rgb(7, 115, 232);
   font-weight: 600;
   font-size: 0.9rem;
-
 }
 
-
-.time-period{
+.time-period {
   float: right;
   font-size: 0.75rem;
   color: #4a4a4a;
@@ -115,42 +106,42 @@ i {
   font-size: 0.9rem;
 }
 
-.education {
+.experience {
   border-bottom: 1px solid rgb(7, 115, 232);
 }
 
-.timeline{
+.timeline {
   position: relative;
   padding-left: 25px;
 }
 
-.timeline ::before{
+.timeline ::before {
   content: "";
-	position: absolute;
-	top: 8px;
-	left: 0;
-	width: 8px;
-	height: 8px;
-	background: rgb(7, 115, 232);
-	border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background: rgb(7, 115, 232);
+  border-radius: 50%;
 }
 
-.timeline ::after{
+.timeline ::after {
   content: "";
-	position: absolute;
-	top: 16px;
+  position: absolute;
+  top: 16px;
   bottom: 12px;
-	left: 2.5px;
-	width: 3px;
-	height: 110%;
-	background: #c4bfbf;
+  left: 2.5px;
+  width: 3px;
+  height: 110%;
+  background: #c4bfbf;
 }
 
-.timeline:last-child ::after{
+.timeline:last-child ::after {
   display: none;
 }
 
-.skills{
+.skills {
   margin-top: 10px;
 }
 
@@ -159,10 +150,24 @@ i {
   flex-wrap: wrap;
 }
 
-.icon img{
-  width: 40px;
-  height: 40px;
-  margin: 10px;
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: rgba(211, 211, 211, 0.62);
+  margin: 5px 10px;
+  border-radius: 32px;
+  color: rgb(7, 115, 232);
+  font-weight: 600;
+  font-size: 12px;
+  padding: 5px 20px;
+}
+
+.icon img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  object-fit: contain;
 }
 
 .personality {
@@ -174,45 +179,43 @@ i {
   padding: 4px 8px;
   margin-bottom: 10px;
   margin-left: 10px;
-  border-radius: 16px;
+  border-radius: 32px;
   background: rgba(211, 211, 211, 0.62);
 }
 
 @media print {
+  .info {
+    display: flex;
+  }
 
-.info {
-  display: flex;
-}
+  .left {
+    width: 700px;
+  }
 
-.left {
-  width: 600px;
-}
+  .container {
+    width: 1000px;
+    height: 1295px;
+  }
 
-.container{
-  width: 1000px;
-  height: 1295px;
-}
+  .timeline ::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background: rgb(7, 115, 232);
+    border-radius: 50%;
+  }
 
-.timeline ::before{
-  content: "";
-	position: absolute;
-	top: 8px;
-	left: 0;
-	width: 8px;
-	height: 8px;
-	background: rgb(7, 115, 232);
-	border-radius: 50%;
-}
-
-.timeline ::after{
-  content: "";
-	position: absolute;
-	top: 16px;
-  bottom: 12px;
-	left: 2.5px;
-	width: 3px;
-	height: 108%;
-	background: #c4bfbf;
-}
-
+  .timeline ::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    bottom: 12px;
+    left: 2.5px;
+    width: 3px;
+    height: 108%;
+    background: #c4bfbf;
+  }
 }
