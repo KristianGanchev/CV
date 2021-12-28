@@ -49,6 +49,7 @@ i {
 .photo img {
   max-width: 15rem;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .tittle {
